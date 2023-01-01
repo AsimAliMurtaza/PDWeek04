@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
 void printMenu();
@@ -20,7 +21,7 @@ main ()
         
         if(choice == 1)
         {
-            
+            system("cls");
             cout << "Enter name: ";
             cin >> name1;
             cout << "Enter matric marks (out of 1100): ";
@@ -40,7 +41,7 @@ main ()
 
         if (choice == 2)
         {
-
+            system("cls");
             cout << "Enter name: ";
             cin >> name2;
             cout << "Enter matric marks (out of 1100): ";
@@ -56,6 +57,7 @@ main ()
 
         if(choice == 3)
         {
+            system("cls");
             calculateaggregate(name1, matricMarks1, interMarks1, ecatMarks1);
             cout << "Press C then Enter to continue...";
             cin >> press;
@@ -63,6 +65,7 @@ main ()
         }
                 if(choice == 4)
         {
+            system("cls");
             calculateaggregate(name2, matricMarks2, interMarks2, ecatMarks2);
             cout << "Press C then Enter to continue...";
             cin >> press;
@@ -70,6 +73,7 @@ main ()
         }
         if(choice == 5)
         {
+            system("cls");
             comparestd(name1, ecatMarks1, name2, ecatMarks2);
             cout << "Press C then Enter to continue...";
             cin >> press;
@@ -99,7 +103,7 @@ void calculateaggregate(string name, float matricMarks, float interMarks, float 
 {
     float aggregate;
     aggregate = (matricMarks/1100 * 30) + (interMarks/550 * 30) + (ecatMarks/400 * 40);
-    cout<< name << " your aggregate is: " << aggregate<<endl;
+    cout<< name << "Aggregate is: " << aggregate<<endl;
 }
 void comparestd(string name1, float ecatMarks1, string name2, float ecatMarks2){
     if ( ecatMarks1 > ecatMarks2)
