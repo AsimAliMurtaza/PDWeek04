@@ -103,7 +103,7 @@ void calculateaggregate(string name, float matricMarks, float interMarks, float 
 {
     float aggregate;
     aggregate = (matricMarks/1100 * 30) + (interMarks/550 * 30) + (ecatMarks/400 * 40);
-    cout<< name << "Aggregate is: " << aggregate<<endl;
+    cout<< name << "Your aggregate is: " << aggregate<<endl;
 }
 void comparestd(string name1, float ecatMarks1, string name2, float ecatMarks2){
     if ( ecatMarks1 > ecatMarks2)
